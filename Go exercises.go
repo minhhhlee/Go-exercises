@@ -22,7 +22,8 @@ func ex1() {
 	str2, _ := reader.ReadString('\n')
 	fmt.Println()
 	fmt.Print(upperCase(str1))
-	fmt.Println(upperCase(str2))
+	fmt.Print(upperCase(str2))
+	fmt.Println("-------------")
 }
 
 func ex2() {
@@ -46,6 +47,7 @@ func ex2() {
 
 	fmt.Printf("LETTERS %v\n", letter)
 	fmt.Printf("DIGITS %v\n", digit)
+	fmt.Println("-------------")
 }
 
 func ex3() {
@@ -62,12 +64,14 @@ func ex3() {
 	}
 
 	fmt.Println(b)
+	fmt.Println("-------------")
 
 }
 
 func ex4() {
 
 	fmt.Println("Exercise 4:")
+
 	reader := bufio.NewReader(os.Stdin)
 
 	str, _ := reader.ReadString('\n')
@@ -100,6 +104,7 @@ func ex4() {
 	}
 
 	fmt.Println(myslice)
+	fmt.Println("-------------")
 }
 
 // ex5 ------------
@@ -133,8 +138,9 @@ func (c circle) perim() float64 {
 
 func measure(g geometry) {
 	fmt.Println(g)
-	fmt.Println(g.area())
-	fmt.Println(g.perim())
+	fmt.Println("Area: ", g.area())
+	fmt.Println("Perimeter: ", g.perim())
+	fmt.Println()
 }
 
 func ex5() {
@@ -181,6 +187,16 @@ func main() {
 
 	ex2()
 
+	/*
+		4. Write a program which accepts a sequence of comma-separated numbers from console and generate an slice out of them. Return the slice.
+
+		Suppose the following input is supplied to the program: 34, 67, 55, 33, 12, 98.
+
+		Then, the output should be: [34 67 55 33 12 98]
+	*/
+
+	ex4()
+
 	/*	3. With a given integral number n, write a program to generate a map that contains (i, i*i) such that is an integral number between 1 and n (both included), and then the program should print the map with representation of the value
 
 		Suppose the following input is supplied to the program: 8
@@ -191,16 +207,6 @@ func main() {
 	*/
 
 	ex3()
-
-	/*
-		4. Write a program which accepts a sequence of comma-separated numbers from console and generate an slice out of them. Return the slice.
-
-		Suppose the following input is supplied to the program: 34, 67, 55, 33, 12, 98.
-
-		Then, the output should be: [34 67 55 33 12 98]
-	*/
-
-	ex4()
 
 	// 5. Viết 2 hàm tính diện tích hình tròn và hình chữ nhật. Sử dụng struct khai báo, interface của golang.
 	ex5()
