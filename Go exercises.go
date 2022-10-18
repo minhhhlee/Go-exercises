@@ -14,6 +14,8 @@ func upperCase(str string) string {
 }
 
 func ex1() {
+
+	fmt.Println("Exercise 1:")
 	reader := bufio.NewReader(os.Stdin)
 
 	str1, _ := reader.ReadString('\n')
@@ -24,6 +26,8 @@ func ex1() {
 }
 
 func ex2() {
+
+	fmt.Println("Exercise 2:")
 	reader := bufio.NewReader(os.Stdin)
 
 	str, _ := reader.ReadString('\n')
@@ -46,6 +50,7 @@ func ex2() {
 
 func ex3() {
 
+	fmt.Println("Exercise 3:")
 	var n int
 	fmt.Print("Enter a number: ")
 	fmt.Scanf("%d", &n)
@@ -61,6 +66,8 @@ func ex3() {
 }
 
 func ex4() {
+
+	fmt.Println("Exercise 4:")
 	reader := bufio.NewReader(os.Stdin)
 
 	str, _ := reader.ReadString('\n')
@@ -131,6 +138,8 @@ func measure(g geometry) {
 }
 
 func ex5() {
+
+	fmt.Println("Exercise 5:")
 	r := rect{width: 5, height: 10}
 	c := circle{radius: 4}
 
